@@ -1,0 +1,864 @@
+/*---------------------------------*/
+  /*  PAGE LAYOUT & RE-USUBALE*/
+/*---------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+	
+
+
+#wrapper {
+	max-width: 2000px;      
+	margin: 0 auto;
+	min-width: 100%;
+	min-height:100vh;
+ 
+
+
+}
+
+body {
+	color: #333;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	word-spacing: 1px;
+	letter-spacing: 0.2px;
+	line-height: 1.62857143;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	width: 10%;
+	height: 2px;
+    color: #f09609;
+    background: #f09609;
+    font-size: 0;
+    border: 0;
+    margin-top: 2%;
+   	margin: 0 auto;
+
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 42px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	
+
+
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+.text-div-sm {
+	display: block;
+    height: 3px;
+    background-color: #f2f2f2
+    margin: 15px 0 15px;
+    width: 170px;
+}
+
+.text-div-lg {
+	display: block;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 15px 0 15px;
+    width: 290px;
+}
+.text-div-xlg {
+	display: block;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 15px 0 15px;
+    width: 990px;
+}
+
+.text-div-md {
+	display: block;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 15px 0 15px;
+    width: 210px;
+}
+
+
+.responsive-image {
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+
+.jumbotron {
+	height: 660px;
+	display: flex;
+	justify-content: center;    /*jumbotron' class to be reseud on other pages of website for hero jumbotron*/
+	align-items: center;
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.fa {
+	padding-left: 5px;
+}
+
+.logo-img-sm {
+	height: 80px;
+	width: 270px;
+	padding-bottom: 8px;
+}
+
+
+/*---------------------------------*/
+       /*BOOTSTRAP NAV*/
+/*---------------------------------*/
+
+
+.nav-button {
+    padding-right: 80px;
+    border-radius: 80px 80px 80px 80px;
+    padding: 5px;
+    background-color: #f09609;
+    height: 28px;
+    text-transform: uppercase;
+    color: #343d46;
+    font-weight: 400;
+
+	
+}
+
+.nav-button:hover {
+	background-color: #db8603;
+	border-color: #db8603;
+
+}
+
+.navbar {
+	margin-bottom: 0;
+	padding: 20px;
+	background-color: #343d46;
+	border-color: #343d46; 
+	border-radius: 0;
+	text-transform: uppercase;
+	
+}
+
+.navbar-brand {
+	padding:0;
+}
+
+
+.navbar .navbar-nav li a {
+	color: #c0c5ce;
+	padding-bottom: 5px;
+
+}
+
+.navbar .navbar-nav li a:hover {
+	color:  #f09609;
+	
+
+}
+
+.navbar-default .navbar-brand {
+	color: #c0c5ce;
+}
+
+
+
+/*---------------------------------*/
+           /*Hero carasel*/
+/*---------------------------------*/
+
+.carousel-inner {
+	width:100%;
+  	max-height: 620px
+}
+
+.carousel-img {
+	width: 100%;
+	height: auto;
+	
+}
+
+
+
+.carousel-caption {
+	position: absolute;
+	top: 25%;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-weight: 500;
+    font-size: 110%;
+
+}
+
+.carousel-caption h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+    font-size: 3.5em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+/*---------------------------------*/
+           /*BUTTONS*/
+/*---------------------------------*/
+
+.btn-primary {
+	background-color: #f09609;
+	border: 2px solid #f09609;
+}
+
+.btn-primary:hover {
+	color: #f2f2f2;
+	background-color: transparent;
+	border: 2px solid #f09609;
+}
+
+.btn-default {
+	border: 2px solid #f09609;
+	color: #fff;
+	background-color: #f09609;
+}
+
+.btn-default:hover {
+	background-color: transparent;
+	border: 2px solid #f09609;
+	color: #f09609;
+	
+}
+
+.carousel-caption .btn {
+    text-shadow: none;
+    margin-top: 15px;
+}
+
+
+/*---------------------------------*/
+          /* SERVICES*/
+/*---------------------------------*/
+
+.section-services {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+
+}
+
+.services-hero p {
+	margin-top: 2%;
+	
+}
+
+.service-provided  {
+	padding-top: 6%;
+}
+
+.service-provided p {
+	padding: 25px;
+}
+
+.icon-container {
+	color: #343d46;
+}
+/*---------------------------------*/
+       /* HERO ABOUT US*/
+/*---------------------------------*/
+
+.section-aboutushero {
+	padding: 10% 10% 10% 10%;
+  	background-color: #f0f0f0;
+	text-align: center;
+	min-width: 100%;
+}
+
+.abouthero-text h2 {
+	padding-bottom: 10px;
+}
+
+.abouthero-text p {
+	margin-top: 3%;
+    margin-bottom: 5%;
+    padding-bottom: 8px;
+}
+
+.company-image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/*---------------------------------*/
+         /* OUR WORK*/
+/*---------------------------------*/
+
+
+.section-work {
+	text-align: center;
+	
+}
+
+.commercial-work {
+	padding: 0;
+	margin: 0;
+	background: url(images/private-work.jpg);
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s, opacity 0.5s;
+	opacity: 0.8;
+
+}
+
+.commercial-wrok a {
+	margin-top: 50px;
+}
+
+.commercial-work-content {
+	padding-top: 180px;
+
+}
+
+
+.domestic-work {
+	padding: 0;
+	margin: 0;
+	background: url(images/commercial-work.jpg);
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.8;	
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.commercial-work:hover {
+	opacity: 1;
+}
+
+.domestic-work:hover {
+	opacity: 1;
+}
+
+.section-accreditations {
+	
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+
+}
+
+.accreditation img {
+	height: 180px;
+	width: 250px;
+}
+
+
+/*---------------------------------*/
+         /*ABOUT PAGE*/
+/*---------------------------------*/
+
+
+#backgroundVideo {
+   margin: 0 auto;
+   width: 100%;
+   overflow: hidden;
+   height: 640px;
+   position: relative;
+}
+
+.overlay {
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+
+.overlay h1 {
+	font-weight: 700;
+    font-size: 4em;
+    color: #fff;
+}
+
+
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 0
+   
+}
+
+
+
+.about-intro  {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+.about-intro p {
+	font-size: 90%;
+
+}
+
+
+
+.about-detail {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+	
+}
+	
+
+.about-detail h3 {
+	font-weight: 700;
+	border-bottom: 3px solid #f2f2f2;
+	padding-bottom: 10px;
+    
+
+    
+}
+
+.about-logo-box {
+	padding-top: 45px;
+    padding-left: 20px;
+}
+
+
+.people-section {
+	margin-top: 70px;
+
+}
+
+
+.the-team h3 {
+	padding-bottom: 10px;
+	font-weight: 700;
+	
+}
+
+.star-review-img {
+	width: 30px;
+	height: 30px;
+}
+
+.owner-img {
+	width: 220px;
+	height: 210px;
+	border-radius: 60%;
+}
+
+.people-content {
+	text-align: center;
+	padding-top: 30px;
+
+}
+
+.people-section {
+	margin-bottom: 120px;
+}
+
+.people-content h4 , h5 {
+	text-transform: uppercase;
+	
+}
+
+.people-content h4 {
+	margin-top: 30px;
+}
+
+.people-content p {
+	padding: 25px 10px 5px 10px;
+
+}
+
+.people-content i {
+	border: 2px solid #a7a7ba;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 4px;
+    color: #a7a7ba;
+
+}
+
+.people-content i:hover {
+	border: 2px solid #f09609;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 4px;
+    color: #f09609;
+}
+.icon-container-team {
+	margin-top: 15px;
+}
+
+
+
+
+
+/*---------------------------------*/
+      /*SERVICES PAGE*/
+/*---------------------------------*/
+
+.domestic-services-jumbotron {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/jumbo1.jpeg");
+    height: 600px;
+  	overflow: hidden;
+  	background-position: center;
+    background-size: cover;
+    padding:0;
+}
+
+.hero-text-box {
+	margin-top: 220px;
+    color: #fff;
+    margin-left: 130px;
+
+}
+
+.hero-text-box h1 {
+	font-size: 4em;
+}
+
+.service-block-1 {
+	padding: 0;
+	margin-top: 75px;
+	padding-left: 18px;
+	padding-right: 18px;
+
+}
+.service-block-2 {
+	padding: 0;
+	margin-top: 80px;
+	padding-left: 18px;
+	padding-right: 18px;
+
+
+}
+
+.service-content {
+	border-bottom: 3px solid #f2f2f2;
+	min-height: 530px;
+	
+
+
+}
+
+
+
+.service-content h2 {
+	margin-bottom: 50px;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+.service-img {
+	background-color: black;
+	margin: 0;
+	width: 100%;
+}
+
+.service-img img {
+	opacity: 0.6;
+    transition: transform 0.8s, opacity 0.5s;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.service-content p {
+	padding-bottom: 30px;
+}
+
+.service-img img:hover {
+	opacity: 1;
+    transition: transform 0.8s, opacity 0.5s;
+}
+
+.quote-banner {
+	background-color: #f09609;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+
+.btn-default-quote-banner {
+	border: 2px solid #fff;
+	color:  #fff;
+	background-color: #f09609;
+	border-radius: 0;
+}
+
+.btn-default-quote-banner:hover {
+	background-color: #fff ;
+	border: 2px solid #fff;
+	border-radius: 0;
+	
+}
+
+/*---------------------------------
+         /*PORTFOLIO PAGE*/
+/*---------------------------------*/
+.portfolio-gallery {
+	padding: 0;
+	margin-bottom: 100px;
+	margin-top: 70px;
+
+}
+
+
+.portfolio-gallery img {
+	margin-bottom: 35px;
+}
+
+
+.portfolio-hero h1 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid orange;
+
+}
+
+.portfolio-img {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-gallery {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 71.5%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  overflow: hidden;
+}
+
+.container:hover .overlay-gallery {
+  opacity: 1;
+}
+
+/*---------------------------------
+     /*TESTIMONIALS PAGE*/
+/*---------------------------------*/
+
+.icon-container {
+	padding-right: 10px;
+}
+
+.fa-check {
+	color: #f09609;
+}
+
+.reviews-hero h1 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+
+	border-bottom: 2px solid orange;
+
+}
+
+.section-choose-us {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.section-choose-us h2 {
+	margin-top: 15px;
+	margin-left: 15px;
+	font-weight: 700;
+	text-transform: none;
+}
+
+.testimonail-block {
+	margin-top: 15px;
+}
+
+
+.choose-us-txt {
+	font-weight: 700;
+
+
+}
+
+.testimonail-block p {
+	padding-bottom: 20px;
+	padding-top: 10px;
+	font-size: 95%;
+}
+
+.testimonails-section {
+	background-color: #eeeeee;
+	padding-bottom: 70px;
+
+
+}
+
+.testimonails-section h2 {
+	margin-top: 40px;
+	font-weight: 700;
+	text-transform: none;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.review-block {
+	padding: 30px;
+	text-align: center;
+	font-size: 115%;
+}
+	
+	
+
+
+/*---------------------------------
+         /*CONTACT PAGE*/
+/*---------------------------------*/
+
+#contact-form {
+	margin-bottom: 70px;
+	margin-top: 30px;
+}
+
+.contact-details {
+	margin-top: 50px;
+
+
+}
+
+.contact-details h4 {
+	font-weight: 700;
+
+}
+
+.quote-form-hero {
+	margin-top: 70px;
+}
+
+.quote-form-hero h3 {
+	font-weight: 700;
+
+}
+
+/*---------------------------------
+         /*FOOTER*/
+/*---------------------------------*/
+	
+.section-footer {
+
+	text-align: center;
+}
+
+footer {
+	background-color: #343d46;
+	color: #c0c5ce;
+	padding-top: 40px;
+
+		
+}
+
+.more-footer ul li {
+	list-style: none;
+	padding: 2px;
+
+}
+
+.more-footer ul li a {
+	color: inherit;
+}
+
+
+.footer-social-icons {
+	max-height: 60px;
+	max-width: 60px;
+}
+
+
+.copyright-content {
+	text-align: center;
+	font-size: 80%;
+}
+
+footer h4 {
+	font-weight: 700;
+	font-size: 95%;
+	color: white;
+}
